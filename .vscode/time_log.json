@@ -1,0 +1,94 @@
+{
+  "Assignment-05": {
+    "index.html": [
+      {
+        "date": "2025-08-27T03:29:51.987Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 3
+      },
+      {
+        "date": "2025-08-27T03:30:25.878Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 5
+      },
+      {
+        "date": "2025-08-27T03:30:31.329Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 5
+      },
+      {
+        "date": "2025-08-27T03:31:19.844Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 49
+      },
+      {
+        "date": "2025-08-27T03:38:15.566Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 416
+      },
+      {
+        "date": "2025-08-27T04:20:14.657Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 2519
+      },
+      {
+        "date": "2025-08-27T04:20:14.744Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 2519
+      },
+      {
+        "date": "2025-08-27T04:20:51.124Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 36
+      },
+      {
+        "date": "2025-08-27T04:30:40.512Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 589
+      },
+      {
+        "date": "2025-08-27T04:37:40.186Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 420
+      },
+      {
+        "date": "2025-08-27T04:38:08.722Z",
+        "user": {
+          "name": "enamul",
+          "email": "enamul.dev01@gmail.com"
+        },
+        "timeSpent": 29
+      }
+    ]
+  }
+}
