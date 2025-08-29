@@ -28,12 +28,12 @@
   </head>
   <body>
     <!--navbar-->
-    <nav class="flex bg-white justify-between py-5 my-0 mx-auto">
-      <div class="logo-left-side w-14 flex gap-2">
+    <nav class="flex md:flex-row bg-white justify-between py-5 my-0 mx-auto">
+      <div class="logo-left-side w-14 flex gap-2 items-center">
         <img src="./assets/logo.png" alt="logo" />
         <h1 class="font-bold text-green-900">Emergency Service</h1>
       </div>
-      <div class="btn-right-side flex gap-2 items-center">
+      <div class="btn-right-side flex md:flex-row items-center">
         <button class="love flex gap-2 bg-[#f5fff6] px-5 py-1 rounded-xl">
           <span class="font-bold" id="like-count">0</span>
           <img class="w-7 bg-" src="./assets/heart.png" alt="heart" />
@@ -64,11 +64,13 @@
       </div>
     </section>
 
-    <section class="main-section bg-[#f5fff6] place-content-center flex gap-4">
+    <section
+      class="main-section bg-[#f5fff6] place-content-center flex flex-col md:flex-row gap-4 items-center"
+    >
       <!-- first flex row-->
       <div class="left-flex-section">
         <div class="py-10 flex flex-col md:flex-row gap-4">
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img class="w-7" src="./assets/emergency.png" alt="card-icon" />
               <i class="fa-regular fa-heart heart-btn mt-2"></i>
@@ -85,7 +87,9 @@
                   <i class="fa-regular fa-copy"></i>Copy
                 </button>
                 <button
-                  class="alert-btn btn btn-active bg-green-500 px-8 text-white"
+                  class="created alert-btn btn btn-active bg-green-500 px-8 text-white"
+                  data-name="National Emergency"
+                  data-number="999"
                   data-message="calling National Emergency"
                 >
                   <i class="fa-solid fa-phone"></i>Call
@@ -93,7 +97,7 @@
               </div>
             </div>
           </div>
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img class="w-7" src="./assets/police.png" alt="card-icon" />
               <i class="fa-regular fa-heart heart-btn mt-2"></i>
@@ -110,8 +114,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn2 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn2 btn btn-active bg-green-500 text-white px-8"
                   data-message="Calling police"
+                  data-name="Police Helpline"
+                  data-number="902"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -119,7 +125,7 @@
               </div>
             </div>
           </div>
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img
                 class="w-7"
@@ -140,8 +146,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn3 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn3 btn btn-active bg-green-500 text-white px-8"
                   data-message="Calling Fire Service"
+                  data-name="Fire Service"
+                  data-number="903"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -152,9 +160,9 @@
         </div>
         <!-- second flex row-->
         <div class="left-flex-section flex flex-col md:flex-row gap-4">
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
-              <img class="w-7" src="./assets/ambulance.png" alt="card-icon" />
+              <img class="w-7" src="./assets/emergency.png" alt="card-icon" />
               <i class="fa-regular fa-heart heart-btn mt-2"></i>
             </div>
             <div>
@@ -172,7 +180,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn4 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn4 btn btn-active bg-green-500 text-white px-8"
+                  data-message="Calling Ambulence"
+                  data-name="Ambulance"
+                  data-number="903"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -180,9 +191,9 @@
               </div>
             </div>
           </div>
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
-              <img class="w-7" src="./assets/emergency.png" alt="card-icon" />
+              <img class="w-7" src="./assets/ambulance.png" alt="card-icon" />
               <i class="fa-regular fa-heart heart-btn mt-2"></i>
             </div>
             <div>
@@ -197,8 +208,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn5 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn5 btn btn-active bg-green-500 text-white px-8"
                   data-message="Calling Helpline"
+                  data-name="Women & Child Helpline"
+                  data-number="109"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -206,7 +219,7 @@
               </div>
             </div>
           </div>
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img class="w-7" src="./assets/emergency.png" alt="card-icon" />
               <i class="fa-regular fa-heart heart-btn mt-2"></i>
@@ -223,8 +236,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn6 btn btn-active bg-green-500 text-white px-8"
-                  data-message="Calling Anti-Corruption"
+                  class="created alert-btn6 btn btn-active bg-green-500 text-white px-8"
+                  data-message="Calling Anti Corruption"
+                  data-name="Anti Corruption"
+                  data-number="106"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -235,7 +250,7 @@
         </div>
         <!-- third flex row-->
         <div class="left-flex-section py-10 flex flex-col md:flex-row gap-4">
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img
                 class="w-7"
@@ -256,8 +271,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn7 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn7 btn btn-active bg-green-500 text-white px-8"
                   data-message="Calling Electricity"
+                  data-name="Elecrtricity Helpline"
+                  data-number="166"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -265,7 +282,7 @@
               </div>
             </div>
           </div>
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img class="w-7" src="./assets/brac.png" alt="card-icon" />
               <i class="fa-regular fa-heart heart-btn mt-2"></i>
@@ -282,8 +299,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn8 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn8 btn btn-active bg-green-500 text-white px-8"
                   data-message="Calling Brac"
+                  data-name="Brac Helpline"
+                  data-number="16445"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -291,7 +310,7 @@
               </div>
             </div>
           </div>
-          <div class="card w-80 gap-2 p-5 rounded-xl bg-white">
+          <div class="card w-80 gap-2 p-5 rounded-xl bg-white shadow-xl">
             <div class="logo-flex flex justify-between">
               <img
                 class="w-7"
@@ -314,8 +333,10 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="alert-btn9 btn btn-active bg-green-500 text-white px-8"
+                  class="created alert-btn9 btn btn-active bg-green-500 text-white px-8"
                   data-message="Calling Railway"
+                  data-name="Bangladesh Railway"
+                  data-number="163"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -326,19 +347,31 @@
         </div>
       </div>
 
-      <div class="right-call-section p-10 bg-white w-80 my-10">
-        <div class="call-history flex justify-between">
+      <!--Call History Section-->
+
+      <div
+        class="right-call-section call-history py-10 px-5 bg-white w-80 h-screen mt-14 shadow-xl"
+      >
+        <div class="call-history flex justify-between items-center">
           <div>
-            <h3>Call History</h3>
+            <h3 class="font-bold">Call History</h3>
           </div>
           <div>
-            <button class="btn btn-active bg-green-500 text-white rounded-full">
+            <button
+              id="clear-history"
+              class="btn clearBtn btn-active bg-green-500 text-white font-bold rounded-full"
+            >
               Clear
             </button>
           </div>
         </div>
+        <ul
+          id="call-history-list"
+          class="mt-4 list-none font-bold text-xl"
+        ></ul>
       </div>
     </section>
     <script src="./script.js"></script>
+    <script src="./test.js"></script>
   </body>
 </html>

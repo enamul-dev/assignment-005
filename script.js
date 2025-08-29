@@ -157,3 +157,25 @@ for (var i = 0; i < buttons9.length; i++) {
 }
 
 /* Service and call history functions */
+// counter
+const historyDisplay = document.getElementById("call-history-list"); // DOM element showing count
+const historyButtons = document.getElementsByClassName("created"); // buttons/icons
+const clearBtn = document.getElementById("clear-history");
+
+for (let i = 0; i < historyButtons.length; i++) {
+  historyButtons[i].addEventListener("click", function () {
+    const name = this.getAttribute("data-name");
+    const number = this.getAttribute("data-number");
+
+    const li = document.createElement("li");
+    li.textContent = name + " " + number;
+
+    // Add it to the history list
+    historyDisplay.appendChild(li);
+  });
+}
+
+clearBtn.addEventListener("click", function () {
+  historyDisplay.innerHTML =
+    '<li id="placeholder" class="text-gray-500">No calls yet</li>';
+});
