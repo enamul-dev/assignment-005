@@ -7,7 +7,7 @@ body {
 nav {
   max-width: 1300px;
 }
-.banner-section {
+/* .banner-section {
   background: #013c2a;
   background: linear-gradient(
     265deg,
@@ -15,4 +15,4 @@ nav {
     rgba(16, 125, 91, 1) 49%,
     rgba(1, 60, 42, 1) 90%
   );
-}
+} */
