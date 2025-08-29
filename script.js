@@ -12,6 +12,7 @@ for (let i = 0; i < heartButtons.length; i++) {
 }
 
 /* alert button fuctions */
+
 const buttons = document.querySelectorAll(".alert-btn");
 const buttons2 = document.querySelectorAll(".alert-btn2");
 const buttons3 = document.querySelectorAll(".alert-btn3");
