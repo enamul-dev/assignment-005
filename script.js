@@ -87,13 +87,13 @@ for (var i = 0; i < buttons9.length; i++) {
 var coins = 100;
 var coinDisplay = document.getElementById("coin-count");
 
-function makeCall() {
+function makeCall(msg) {
   if (coins >= 20) {
     coins = coins - 20;
 
     coinDisplay.textContent = "" + coins;
 
-    alert("\n20 coins deducted.");
+    alert(msg + "\n20 coins deducted.");
   } else {
     alert("Not enough coins to make a call!");
   }
@@ -101,55 +101,57 @@ function makeCall() {
 
 for (var i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
+
 for (var i = 0; i < buttons2.length; i++) {
   buttons2[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
 for (var i = 0; i < buttons3.length; i++) {
   buttons3[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
+
 for (var i = 0; i < buttons4.length; i++) {
   buttons4[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
 for (var i = 0; i < buttons5.length; i++) {
   buttons5[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
 for (var i = 0; i < buttons6.length; i++) {
   buttons6[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
 for (var i = 0; i < buttons7.length; i++) {
   buttons7[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
 for (var i = 0; i < buttons8.length; i++) {
   buttons8[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
 for (var i = 0; i < buttons9.length; i++) {
   buttons9[i].addEventListener("click", function () {
-    var msg = this.getAttribute("");
+    var msg = this.getAttribute("data-message");
     makeCall(msg);
   });
 }
